@@ -542,6 +542,82 @@ footer a {
   text-decoration: none;
 }
 
+/* ═══ TRAVELS ═══ */
+.travels-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.travel-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 30px;
+  text-align: center;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.travel-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(108,92,231,0.05), rgba(34,211,238,0.05));
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.travel-card:hover::before { opacity: 1; }
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(108,92,231,0.2);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.travel-flag {
+  font-size: 56px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-country {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-desc {
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-follow {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 17px;
+  color: var(--text-dim);
+}
+
+.travel-follow a {
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.travel-follow a:hover { color: var(--purple); }
+
 /* ═══ ANIMATIONS ═══ */
 .fade-in {
   opacity: 0;
@@ -589,8 +665,9 @@ footer a {
   <div class="nav-inner">
     <a href="#" class="nav-name">RR</a>
     <ul class="nav-links">
-      <li><a href="#ventures">Ventures</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#travels">Travels</a></li>
+      <li><a href="#ventures">Ventures</a></li>
       <li><a href="#values">Values</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -602,14 +679,15 @@ footer a {
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">Entrepreneur &bull; Builder &bull; Cebu</div>
+      <div class="hero-badge">Entrepreneur &bull; Traveler &bull; Builder</div>
       <h1>Hi, I'm <span class="gradient">Reafil Rusiana</span></h1>
-      <p class="hero-sub">I build platforms that connect people and create opportunities in the Philippines. From property to local services to creative brands — I believe in building things that last.</p>
+      <p class="hero-sub">Filipino entrepreneur, world traveler, and self-taught builder from Cebu. I create platforms that connect people and explore the world one country at a time.</p>
       <div class="hero-links">
-        <a href="#ventures" class="btn btn-primary">See My Work &darr;</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#about" class="btn btn-primary">Who I Am &darr;</a>
+        <a href="https://www.facebook.com/aCueRaCa68" target="_blank" class="btn btn-outline">Facebook</a>
+        <a href="https://www.instagram.com/reafilj/" target="_blank" class="btn btn-outline">Instagram</a>
       </div>
-      <p class="hero-location">&#128205; Based in Cebu, Philippines</p>
+      <p class="hero-location">&#128205; Cebu, Philippines &bull; &#9992; Japan &bull; Hong Kong &bull; Colombia &bull; and more</p>
     </div>
   </div>
 </section>
@@ -657,10 +735,11 @@ footer a {
 
     <div class="about-content">
       <div class="about-text fade-in">
-        <p>I'm <strong>Reafil B. Rusiana</strong>, a self-taught tech entrepreneur based in <strong>Cebu, Philippines</strong>. I build digital platforms that solve everyday problems — from finding trustworthy workers, to buying verified property, to celebrating Cebuano culture through fashion.</p>
-        <p>I believe every Filipino community deserves access to reliable services and honest opportunities. That's why everything I build is rooted in <strong>trust, verification, and transparency</strong>.</p>
-        <p>I handle the full stack: product design, development, branding, business registration, and marketing. I don't just build websites — I build <strong>businesses that serve people</strong>.</p>
-        <p>When I'm not building, I'm learning. I believe in continuous growth, owning your data, and creating ecosystems that give value back to the community.</p>
+        <p>I'm <strong>Reafil B. Rusiana</strong> — known to friends as <strong>Brodit Reafil</strong>. I'm a Filipino entrepreneur, traveler, and self-taught tech builder based in <strong>Cebu, Philippines</strong>.</p>
+        <p>I grew up in Cebu with a curiosity for how things work and a drive to create something meaningful. Instead of waiting for opportunities, I built them — launching three businesses in 2026 alone, all from scratch, all self-taught.</p>
+        <p>But I'm not just about work. I'm someone who believes life is meant to be <strong>experienced</strong>. I've traveled to <strong>Japan, Hong Kong, Colombia</strong>, and other countries — exploring cultures, meeting people, and bringing those perspectives back into everything I build.</p>
+        <p>I'm a <strong>Bisaya</strong> at heart. Proud of where I come from, and driven to put Cebu on the map — not just as a tourist destination, but as a place where <strong>real innovation happens</strong>.</p>
+        <p>Whether it's coding a platform at 2AM, exploring the streets of Tokyo, or helping a seller list their land — I show up fully.</p>
       </div>
       <div class="about-stats fade-in">
         <div class="stat">
@@ -669,18 +748,52 @@ footer a {
         </div>
         <div class="stat">
           <div class="stat-num">36+</div>
-          <div class="stat-label">Service Categories on Townik</div>
+          <div class="stat-label">Services on Townik</div>
         </div>
         <div class="stat">
           <div class="stat-num">DTI</div>
           <div class="stat-label">Registered Business</div>
         </div>
         <div class="stat">
-          <div class="stat-num">2026</div>
-          <div class="stat-label">All Built This Year</div>
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Countries Explored</div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- TRAVELS -->
+<section id="travels">
+  <div class="container">
+    <div class="section-label">Where I've Been</div>
+    <h2 class="section-title">Travels</h2>
+    <p class="section-desc">I believe traveling shapes how you think, build, and connect with people. Here are some places that have shaped me.</p>
+
+    <div class="travels-grid">
+      <div class="travel-card fade-in">
+        <div class="travel-flag">&#127471;&#127477;</div>
+        <div class="travel-country">Japan</div>
+        <div class="travel-desc">Explored the culture of precision, discipline, and beauty. From Tokyo's energy to the quiet temples — Japan taught me that quality matters in every detail.</div>
+      </div>
+      <div class="travel-card fade-in">
+        <div class="travel-flag">&#127469;&#127472;</div>
+        <div class="travel-country">Hong Kong</div>
+        <div class="travel-desc">A city that never stops moving. The hustle, the skyline, the street food — Hong Kong showed me what it means to build fast and think big.</div>
+      </div>
+      <div class="travel-card fade-in">
+        <div class="travel-flag">&#127464;&#127476;</div>
+        <div class="travel-country">Colombia</div>
+        <div class="travel-desc">Vibrant people, incredible energy, and a culture of resilience. Colombia reminded me that the best communities are built on warmth and trust.</div>
+      </div>
+      <div class="travel-card fade-in">
+        <div class="travel-flag">&#127477;&#127469;</div>
+        <div class="travel-country">Philippines</div>
+        <div class="travel-desc">Home. Cebu is where it all starts. The islands, the people, the Bisaya spirit — this is why I build. Everything I create is for this community.</div>
+      </div>
+    </div>
+
+    <p class="travel-follow fade-in">Follow my adventures on <a href="https://www.facebook.com/aCueRaCa68" target="_blank">Facebook</a> and <a href="https://www.instagram.com/reafilj/" target="_blank">Instagram</a></p>
   </div>
 </section>
 
@@ -731,6 +844,20 @@ footer a {
           <div class="contact-value">r.reafil2@gmail.com</div>
         </div>
       </a>
+      <a href="https://www.facebook.com/aCueRaCa68" target="_blank" class="contact-card fade-in">
+        <div class="contact-icon">&#128100;</div>
+        <div>
+          <div class="contact-label">Facebook</div>
+          <div class="contact-value">Brodit Reafil</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/reafilj/" target="_blank" class="contact-card fade-in">
+        <div class="contact-icon">&#128247;</div>
+        <div>
+          <div class="contact-label">Instagram</div>
+          <div class="contact-value">@reafilj</div>
+        </div>
+      </a>
       <a href="https://townik.com" target="_blank" class="contact-card fade-in">
         <div class="contact-icon">&#127760;</div>
         <div>
@@ -743,6 +870,13 @@ footer a {
         <div>
           <div class="contact-label">CebuLandMarket</div>
           <div class="contact-value">cebulandmarket.com</div>
+        </div>
+      </a>
+      <a href="https://bahaw-studio.github.io" target="_blank" class="contact-card fade-in">
+        <div class="contact-icon">&#127912;</div>
+        <div>
+          <div class="contact-label">BAHAW Studio</div>
+          <div class="contact-value">Etsy Shop</div>
         </div>
       </a>
     </div>
