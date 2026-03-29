@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reafil Rusiana — Entrepreneur, Traveler, Builder | Cebu, Philippines</title>
-<meta name="description" content="Reafil Rusiana (Brodit Reafil) is a tech entrepreneur and world traveler from Cebu, Philippines. Creator of Townik, CebuLandMarket, and BAHAW Studio. World traveler.">
-<meta name="keywords" content="Reafil Rusiana, Reafil B. Rusiana, Brodit Reafil, Cebu entrepreneur, Townik, CebuLandMarket, BAHAW Studio, Filipino traveler, Cebu Philippines">
+<meta name="description" content="Reafil Rusiana (Brodit Reafil) is a tech entrepreneur and world traveler from Cebu, Philippines. Creator of Townik, CebuLandMarket, and BAHAW Studio.">
+<meta name="keywords" content="Reafil Rusiana, Reafil B. Rusiana, Brodit Reafil, Cebu entrepreneur, Townik, CebuLandMarket, BAHAW Studio, Filipina traveler, Cebu Philippines">
 <meta name="author" content="Reafil Rusiana">
 
 <meta property="og:title" content="Reafil Rusiana — Entrepreneur, Traveler, Builder">
-<meta property="og:description" content="Filipino entrepreneur and world traveler from Cebu. Founder of Townik, CebuLandMarket, and BAHAW Studio. World traveler.">
+<meta property="og:description" content="Filipina entrepreneur and world traveler from Cebu. Founder of Townik, CebuLandMarket, and BAHAW Studio.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cebulandmarket.github.io/reafilrusiana/">
 
@@ -19,6 +19,7 @@
   "@type": "Person",
   "name": "Reafil Rusiana",
   "alternateName": ["Reafil B. Rusiana", "Brodit Reafil"],
+  "gender": "Female",
   "jobTitle": "Entrepreneur & Founder",
   "description": "Tech entrepreneur and world traveler from Cebu, Philippines. Founder of Townik, CebuLandMarket, and BAHAW Studio.",
   "url": "https://cebulandmarket.github.io/reafilrusiana/",
@@ -34,304 +35,266 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #0D0B1E;
-  --card: rgba(255,255,255,0.04);
-  --card-hover: rgba(255,255,255,0.07);
-  --border: rgba(255,255,255,0.08);
-  --text: #F1F5F9;
-  --dim: #94A3B8;
-  --purple: #A78BFA;
-  --cyan: #22D3EE;
-  --pink: #F472B6;
-  --yellow: #FBBF24;
-  --green: #4ADE80;
-  --orange: #FB923C;
-  --red: #F87171;
+  --bg: #FFF9F5;
+  --bg2: #FFF5EE;
+  --card: #FFFFFF;
+  --border: rgba(0,0,0,0.06);
+  --text: #2D2A32;
+  --dim: #7C7582;
+  --rose: #E8567F;
+  --peach: #F4845F;
+  --lavender: #9B72CF;
+  --mint: #5BBFAD;
+  --gold: #D4A853;
+  --blush: #F9D1D1;
+  --soft-purple: #EDE5F7;
+  --soft-pink: #FFF0F3;
+  --soft-mint: #E8F8F5;
+  --soft-gold: #FFF8E7;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'DM Sans', -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-/* ═══ ANIMATED BG ═══ */
-.bg-wrap {
-  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+/* ═══ DECORATIVE BG ═══ */
+.bg-decor { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.bg-circle {
+  position: absolute; border-radius: 50%; opacity: 0.4;
+  animation: floatSoft ease-in-out infinite;
 }
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  animation: blobDrift ease-in-out infinite;
-}
-.blob-1 { width: 600px; height: 600px; top: -10%; right: -10%; background: rgba(167,139,250,0.15); animation-duration: 18s; }
-.blob-2 { width: 500px; height: 500px; bottom: 10%; left: -10%; background: rgba(34,211,238,0.12); animation-duration: 22s; animation-direction: reverse; }
-.blob-3 { width: 400px; height: 400px; top: 40%; left: 50%; background: rgba(244,114,182,0.1); animation-duration: 15s; }
-
-@keyframes blobDrift {
+.bg-c1 { width: 500px; height: 500px; top: -150px; right: -100px; background: radial-gradient(circle, #F9D1D1, transparent 70%); animation-duration: 20s; }
+.bg-c2 { width: 400px; height: 400px; bottom: 5%; left: -100px; background: radial-gradient(circle, #EDE5F7, transparent 70%); animation-duration: 16s; animation-direction: reverse; }
+.bg-c3 { width: 350px; height: 350px; top: 45%; left: 60%; background: radial-gradient(circle, #E8F8F5, transparent 70%); animation-duration: 22s; }
+@keyframes floatSoft {
   0%,100% { transform: translate(0,0) scale(1); }
-  33% { transform: translate(40px,-50px) scale(1.1); }
-  66% { transform: translate(-30px,30px) scale(0.95); }
+  50% { transform: translate(30px,-20px) scale(1.05); }
 }
 
-/* floating emojis */
-.float-emoji {
-  position: fixed;
-  font-size: 28px;
-  opacity: 0;
-  z-index: 0;
-  pointer-events: none;
-  animation: emojiUp linear infinite;
+/* floating petals */
+.petal {
+  position: fixed; z-index: 0; pointer-events: none; opacity: 0;
+  animation: petalFall linear infinite;
 }
-@keyframes emojiUp {
-  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
-  10% { opacity: 0.3; }
-  90% { opacity: 0.15; }
-  100% { transform: translateY(-110vh) rotate(180deg); opacity: 0; }
+@keyframes petalFall {
+  0% { transform: translateY(-20px) rotate(0deg) translateX(0); opacity: 0; }
+  10% { opacity: 0.5; }
+  50% { opacity: 0.3; }
+  100% { transform: translateY(110vh) rotate(360deg) translateX(80px); opacity: 0; }
 }
 
 /* ═══ LAYOUT ═══ */
-.container { max-width: 1000px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
 
 /* ═══ NAV ═══ */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  backdrop-filter: blur(20px); background: rgba(13,11,30,0.75);
+  backdrop-filter: blur(20px); background: rgba(255,249,245,0.85);
   border-bottom: 1px solid var(--border);
 }
 .nav-inner {
-  max-width: 1000px; margin: 0 auto; padding: 0 24px;
-  display: flex; align-items: center; justify-content: space-between; height: 64px;
+  max-width: 900px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between; height: 60px;
 }
 .nav-name {
-  font-family: 'Outfit'; font-size: 22px; font-weight: 900;
-  background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  text-decoration: none;
+  font-family: 'Playfair Display'; font-size: 22px; font-weight: 700;
+  color: var(--rose); text-decoration: none;
 }
-.nav-links { display: flex; gap: 28px; list-style: none; }
-.nav-links a { color: var(--dim); text-decoration: none; font-size: 14px; font-weight: 700; transition: color 0.3s; }
-.nav-links a:hover { color: var(--cyan); }
-.nav-social { display: flex; gap: 12px; }
-.nav-social a {
-  font-size: 20px; text-decoration: none;
-  transition: transform 0.3s;
+.nav-links { display: flex; gap: 24px; list-style: none; }
+.nav-links a {
+  color: var(--dim); text-decoration: none; font-size: 14px; font-weight: 600;
+  transition: color 0.3s; letter-spacing: 0.5px;
 }
-.nav-social a:hover { transform: scale(1.3) rotate(-5deg); }
+.nav-links a:hover { color: var(--rose); }
+.nav-social { display: flex; gap: 10px; }
+.nav-social a { font-size: 18px; text-decoration: none; transition: transform 0.3s; }
+.nav-social a:hover { transform: scale(1.2); }
 
 /* ═══ HERO ═══ */
 .hero {
-  min-height: 100vh; display: flex; align-items: center; padding-top: 64px; text-align: center;
+  min-height: 100vh; display: flex; align-items: center; padding-top: 60px; text-align: center;
 }
-.hero-wave { font-size: 72px; display: inline-block; animation: wave 2s ease-in-out infinite; }
-@keyframes wave {
-  0%,100% { transform: rotate(0deg); }
-  15% { transform: rotate(14deg); }
-  30% { transform: rotate(-8deg); }
-  45% { transform: rotate(14deg); }
-  60% { transform: rotate(-4deg); }
-  75% { transform: rotate(10deg); }
-}
+.hero-hi { font-size: 56px; margin-bottom: 8px; }
 .hero h1 {
-  font-family: 'Outfit'; font-size: clamp(42px, 7vw, 72px); font-weight: 900;
-  line-height: 1.1; margin-top: 16px;
+  font-family: 'Playfair Display'; font-size: clamp(38px, 6.5vw, 62px); font-weight: 800;
+  line-height: 1.15; color: var(--text);
 }
 .hero h1 .name {
-  background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
+  background: linear-gradient(135deg, var(--rose), var(--lavender), var(--peach));
   background-size: 200% 100%;
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  animation: shimmer 4s linear infinite;
+  animation: shimmer 5s ease infinite;
 }
-@keyframes shimmer { 0%{background-position:100% 0} 100%{background-position:-100% 0} }
+@keyframes shimmer { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
 
 .hero-tags {
   margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
 }
 .tag {
-  padding: 6px 16px; border-radius: 50px; font-size: 14px; font-weight: 700;
-  border: 1px solid; display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 600;
+  display: inline-flex; align-items: center; gap: 5px;
 }
-.tag-purple { color: var(--purple); border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.08); }
-.tag-cyan { color: var(--cyan); border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.08); }
-.tag-pink { color: var(--pink); border-color: rgba(244,114,182,0.3); background: rgba(244,114,182,0.08); }
-.tag-yellow { color: var(--yellow); border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.08); }
+.tag-rose { color: var(--rose); background: var(--soft-pink); }
+.tag-lavender { color: var(--lavender); background: var(--soft-purple); }
+.tag-mint { color: var(--mint); background: var(--soft-mint); }
+.tag-gold { color: var(--gold); background: var(--soft-gold); }
 
 .hero-bio {
-  margin-top: 24px; font-size: 19px; color: var(--dim); max-width: 550px;
-  margin-left: auto; margin-right: auto; line-height: 1.7;
+  margin: 22px auto 0; font-size: 18px; color: var(--dim); max-width: 520px; line-height: 1.7;
 }
 
 .hero-btns {
-  margin-top: 32px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
 }
 .btn {
-  padding: 12px 28px; border-radius: 14px; font-size: 15px; font-weight: 800;
-  text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px;
-  border: none; cursor: pointer;
+  padding: 11px 26px; border-radius: 50px; font-size: 14px; font-weight: 700;
+  text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 7px;
+  border: none; cursor: pointer; letter-spacing: 0.3px;
 }
-.btn:hover { transform: translateY(-3px); }
-.btn-fb { background: #1877F2; color: white; box-shadow: 0 4px 15px rgba(24,119,242,0.3); }
-.btn-ig { background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF); color: white; box-shadow: 0 4px 15px rgba(221,42,123,0.3); }
-.btn-ghost { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+.btn:hover { transform: translateY(-2px); }
+.btn-rose { background: var(--rose); color: white; box-shadow: 0 4px 20px rgba(232,86,127,0.25); }
+.btn-outline { background: white; color: var(--text); border: 1.5px solid var(--border); }
+.btn-outline:hover { border-color: var(--rose); color: var(--rose); }
 
-.hero-countries {
-  margin-top: 30px; font-size: 28px; letter-spacing: 4px;
-  animation: flagScroll 20s linear infinite;
+.hero-loc {
+  margin-top: 20px; font-size: 14px; color: var(--dim); font-weight: 500;
 }
-@keyframes flagScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.flag-track { display: inline-block; white-space: nowrap; }
 
 /* ═══ SECTIONS ═══ */
 section { padding: 80px 0; }
-.section-emoji { font-size: 48px; margin-bottom: 12px; }
+.section-icon { font-size: 40px; margin-bottom: 10px; }
 .section-title {
-  font-family: 'Outfit'; font-size: clamp(28px, 5vw, 42px); font-weight: 900; margin-bottom: 10px;
+  font-family: 'Playfair Display'; font-size: clamp(26px, 4.5vw, 38px); font-weight: 800;
+  color: var(--text); margin-bottom: 10px;
 }
-.section-desc { font-size: 17px; color: var(--dim); max-width: 550px; line-height: 1.7; }
+.section-desc { font-size: 16px; color: var(--dim); max-width: 500px; line-height: 1.7; }
 
-/* ═══ ABOUT ═══ */
-.about-cards {
-  margin-top: 40px; display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;
+/* ═══ ABOUT CARDS ═══ */
+.about-grid {
+  margin-top: 36px; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;
 }
-.about-card {
-  background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+.acard {
+  background: var(--card); border: 1.5px solid var(--border); border-radius: 20px;
   padding: 28px; transition: all 0.3s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
 }
-.about-card:hover { background: var(--card-hover); transform: translateY(-4px); border-color: rgba(167,139,250,0.15); }
-.about-card-emoji { font-size: 36px; margin-bottom: 12px; }
-.about-card-title { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
-.about-card-text { font-size: 15px; color: var(--dim); line-height: 1.6; }
+.acard:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.06); border-color: var(--blush); }
+.acard-icon { font-size: 32px; margin-bottom: 10px; }
+.acard-title { font-family: 'Playfair Display'; font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+.acard-text { font-size: 14px; color: var(--dim); line-height: 1.65; }
 
-/* ═══ TRAVELS ═══ */
-.travel-map {
-  margin-top: 40px;
-  display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
-}
-.travel-pin {
-  display: flex; align-items: center; gap: 8px;
-  padding: 10px 20px; border-radius: 50px;
-  background: var(--card); border: 1px solid var(--border);
-  font-size: 15px; font-weight: 700;
-  transition: all 0.3s; cursor: default;
-}
-.travel-pin:hover {
-  transform: scale(1.1) rotate(-2deg);
-  border-color: var(--cyan);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-.travel-pin .flag { font-size: 24px; }
-.travel-counter {
-  margin-top: 30px; text-align: center;
-}
-.counter-num {
-  font-family: 'Outfit'; font-size: 64px; font-weight: 900;
-  background: linear-gradient(135deg, var(--cyan), var(--purple));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-}
-.counter-label { font-size: 16px; color: var(--dim); }
-.travel-note {
-  margin-top: 24px; text-align: center; font-size: 16px; color: var(--dim); font-style: italic;
-}
-.travel-note a { color: var(--cyan); text-decoration: none; font-weight: 700; font-style: normal; }
-
-/* ═══ VENTURES ═══ */
-.ventures-stack { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
-.venture {
-  display: flex; align-items: center; gap: 24px;
-  background: var(--card); border: 1px solid var(--border); border-radius: 20px;
-  padding: 28px 32px; transition: all 0.3s; text-decoration: none; color: var(--text);
-}
-.venture:hover { background: var(--card-hover); transform: translateX(8px); border-color: rgba(167,139,250,0.15); }
-.venture-icon { font-size: 44px; flex-shrink: 0; }
-.venture-info { flex: 1; }
-.venture-name { font-family: 'Outfit'; font-size: 22px; font-weight: 800; }
-.venture-role { font-size: 13px; font-weight: 700; color: var(--purple); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
-.venture-desc { font-size: 15px; color: var(--dim); line-height: 1.5; margin-top: 6px; }
-.venture-arrow { font-size: 24px; color: var(--dim); transition: transform 0.3s, color 0.3s; }
-.venture:hover .venture-arrow { transform: translateX(6px); color: var(--cyan); }
-
-/* ═══ MY STORY TIMELINE ═══ */
-.timeline { margin-top: 40px; position: relative; padding-left: 40px; }
+/* ═══ STORY TIMELINE ═══ */
+.timeline { margin-top: 36px; position: relative; padding-left: 36px; }
 .timeline::before {
-  content: ''; position: absolute; left: 14px; top: 0; bottom: 0; width: 3px;
-  background: linear-gradient(180deg, var(--purple), var(--cyan), var(--pink), var(--green));
+  content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 2px;
+  background: linear-gradient(180deg, var(--rose), var(--lavender), var(--mint), var(--gold));
   border-radius: 2px;
 }
 .tl-item { position: relative; margin-bottom: 28px; }
 .tl-item::before {
-  content: ''; position: absolute; left: -33px; top: 6px;
-  width: 16px; height: 16px; border-radius: 50%;
-  background: var(--purple); border: 3px solid var(--bg);
-  box-shadow: 0 0 12px rgba(167,139,250,0.4);
+  content: ''; position: absolute; left: -30px; top: 6px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--rose); border: 3px solid var(--bg);
+  box-shadow: 0 0 10px rgba(232,86,127,0.2);
 }
-.tl-year {
-  font-family: 'Outfit'; font-size: 14px; font-weight: 800; color: var(--cyan);
-  letter-spacing: 2px; text-transform: uppercase;
-}
-.tl-title { font-size: 18px; font-weight: 800; margin-top: 4px; }
-.tl-desc { font-size: 15px; color: var(--dim); line-height: 1.6; margin-top: 4px; }
+.tl-year { font-size: 13px; font-weight: 700; color: var(--lavender); letter-spacing: 1px; text-transform: uppercase; }
+.tl-title { font-family: 'Playfair Display'; font-size: 17px; font-weight: 700; margin-top: 3px; }
+.tl-desc { font-size: 14px; color: var(--dim); line-height: 1.65; margin-top: 4px; }
 .tl-tag {
-  display: inline-block; padding: 3px 12px; border-radius: 50px; font-size: 12px; font-weight: 700;
-  margin-top: 6px; border: 1px solid;
+  display: inline-block; padding: 3px 11px; border-radius: 50px; font-size: 11px; font-weight: 700; margin-top: 6px; margin-right: 4px;
 }
-.tl-tag-green { color: var(--green); border-color: rgba(74,222,128,0.3); background: rgba(74,222,128,0.08); }
-.tl-tag-purple { color: var(--purple); border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.08); }
-.tl-tag-pink { color: var(--pink); border-color: rgba(244,114,182,0.3); background: rgba(244,114,182,0.08); }
-.tl-tag-yellow { color: var(--yellow); border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.08); }
-.tl-tag-cyan { color: var(--cyan); border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.08); }
+.tl-tag-green { color: var(--mint); background: var(--soft-mint); }
+.tl-tag-purple { color: var(--lavender); background: var(--soft-purple); }
+.tl-tag-pink { color: var(--rose); background: var(--soft-pink); }
+.tl-tag-gold { color: var(--gold); background: var(--soft-gold); }
+.tl-tag-cyan { color: #3B9EBF; background: #E8F4F8; }
+
+/* ═══ TRAVELS ═══ */
+.travel-text {
+  margin-top: 24px; text-align: center; max-width: 520px; margin-left: auto; margin-right: auto;
+  font-size: 16px; color: var(--dim); line-height: 1.8;
+}
+.travel-follow {
+  margin-top: 20px; text-align: center; font-size: 15px; color: var(--dim);
+}
+.travel-follow a { color: var(--rose); text-decoration: none; font-weight: 700; }
+
+/* ═══ VENTURES ═══ */
+.ventures-stack { margin-top: 36px; display: flex; flex-direction: column; gap: 14px; }
+.venture {
+  display: flex; align-items: center; gap: 20px;
+  background: var(--card); border: 1.5px solid var(--border); border-radius: 18px;
+  padding: 24px 28px; transition: all 0.3s; text-decoration: none; color: var(--text);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+}
+.venture:hover { transform: translateX(6px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); border-color: var(--blush); }
+.venture-icon { font-size: 36px; flex-shrink: 0; }
+.venture-info { flex: 1; }
+.venture-name { font-family: 'Playfair Display'; font-size: 20px; font-weight: 700; }
+.venture-role { font-size: 12px; font-weight: 700; color: var(--rose); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+.venture-desc { font-size: 14px; color: var(--dim); line-height: 1.55; margin-top: 5px; }
+.venture-arrow { font-size: 20px; color: var(--dim); transition: transform 0.3s, color 0.3s; }
+.venture:hover .venture-arrow { transform: translateX(5px); color: var(--rose); }
 
 /* ═══ FUN FACTS ═══ */
 .facts-grid {
-  margin-top: 40px;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;
+  margin-top: 36px; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px;
 }
 .fact {
-  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
-  padding: 24px; text-align: center; transition: all 0.3s;
+  background: var(--card); border: 1.5px solid var(--border); border-radius: 16px;
+  padding: 22px; text-align: center; transition: all 0.3s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
 }
-.fact:hover { transform: rotate(-2deg) scale(1.03); border-color: var(--pink); }
-.fact-emoji { font-size: 36px; margin-bottom: 8px; }
-.fact-text { font-size: 15px; font-weight: 700; }
+.fact:hover { transform: rotate(-1.5deg) scale(1.02); border-color: var(--blush); box-shadow: 0 6px 20px rgba(0,0,0,0.05); }
+.fact-icon { font-size: 30px; margin-bottom: 6px; }
+.fact-text { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.5; }
 
 /* ═══ CONTACT ═══ */
 .contact-row {
-  margin-top: 40px;
-  display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+  margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
 }
 .contact-btn {
-  display: flex; align-items: center; gap: 10px;
-  padding: 14px 28px; border-radius: 16px;
-  text-decoration: none; font-size: 15px; font-weight: 700;
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border-radius: 50px;
+  text-decoration: none; font-size: 14px; font-weight: 600;
   transition: all 0.3s; color: var(--text);
-  background: var(--card); border: 1px solid var(--border);
+  background: var(--card); border: 1.5px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
 }
-.contact-btn:hover { transform: translateY(-4px); border-color: var(--purple); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-.contact-btn .icon { font-size: 24px; }
+.contact-btn:hover { transform: translateY(-3px); border-color: var(--rose); color: var(--rose); box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+.contact-btn .icon { font-size: 20px; }
 
 /* ═══ FOOTER ═══ */
 footer {
   padding: 40px 0; border-top: 1px solid var(--border); text-align: center;
-  font-size: 14px; color: var(--dim);
+  font-size: 13px; color: var(--dim);
 }
-footer a { color: var(--cyan); text-decoration: none; }
-.footer-quote { font-style: italic; margin-bottom: 12px; color: var(--purple); font-size: 16px; }
+footer a { color: var(--rose); text-decoration: none; }
+.footer-quote {
+  font-family: 'Playfair Display'; font-style: italic;
+  margin-bottom: 10px; color: var(--lavender); font-size: 15px;
+}
+
+/* ═══ DIVIDER ═══ */
+.section-divider {
+  text-align: center; font-size: 20px; letter-spacing: 12px; color: var(--blush); padding: 10px 0;
+}
 
 /* ═══ FADE IN ═══ */
-.fade-in { opacity: 0; transform: translateY(25px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.7s, transform 0.7s; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
 /* ═══ RESPONSIVE ═══ */
@@ -345,24 +308,22 @@ footer a { color: var(--cyan); text-decoration: none; }
 </head>
 <body>
 
-<div class="bg-wrap">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
+<div class="bg-decor">
+  <div class="bg-circle bg-c1"></div>
+  <div class="bg-circle bg-c2"></div>
+  <div class="bg-circle bg-c3"></div>
 </div>
 
 <script>
-// Floating emojis
-const emojis = ['✈️','🌏','🏗️','💻','🎨','🇵🇭','⚡','🔥','🌴','🤙','🎵','📸','🏠','🔧','🧢'];
-for (let i = 0; i < 15; i++) {
+const petals = ['🌸','✨','🦋','💫','🌿','🌷'];
+for (let i = 0; i < 12; i++) {
   const el = document.createElement('div');
-  el.className = 'float-emoji';
-  el.textContent = emojis[i % emojis.length];
+  el.className = 'petal';
+  el.textContent = petals[i % petals.length];
   el.style.left = (5 + Math.random() * 90) + '%';
-  el.style.bottom = '-40px';
-  el.style.animationDuration = (15 + Math.random() * 15) + 's';
+  el.style.fontSize = (16 + Math.random() * 14) + 'px';
+  el.style.animationDuration = (18 + Math.random() * 15) + 's';
   el.style.animationDelay = (Math.random() * 20) + 's';
-  el.style.fontSize = (20 + Math.random() * 20) + 'px';
   document.body.appendChild(el);
 }
 </script>
@@ -370,7 +331,7 @@ for (let i = 0; i < 15; i++) {
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-name">Reafil ✌️</a>
+    <a href="#" class="nav-name">Reafil &#10084;</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#story">My Story</a></li>
@@ -379,8 +340,8 @@ for (let i = 0; i < 15; i++) {
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-social">
-      <a href="https://www.facebook.com/aCueRaCa68" target="_blank" title="Facebook">📘</a>
-      <a href="https://www.instagram.com/reafilj/" target="_blank" title="Instagram">📸</a>
+      <a href="https://www.facebook.com/aCueRaCa68" target="_blank">&#128218;</a>
+      <a href="https://www.instagram.com/reafilj/" target="_blank">&#128248;</a>
     </div>
   </div>
 </nav>
@@ -388,21 +349,22 @@ for (let i = 0; i < 15; i++) {
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero-content">
-      <div class="hero-wave">👋</div>
+    <div class="hero-content" style="text-align:center;">
+      <div class="hero-hi">&#128075;</div>
       <h1>I'm <span class="name">Reafil Rusiana</span></h1>
       <div class="hero-tags">
-        <span class="tag tag-purple">🚀 Entrepreneur</span>
-        <span class="tag tag-cyan">✈️ Traveler</span>
-        <span class="tag tag-pink">💻 Builder</span>
-        <span class="tag tag-yellow">🇵🇭 Cebuano</span>
+        <span class="tag tag-rose">&#127800; Entrepreneur</span>
+        <span class="tag tag-lavender">&#9992;&#65039; Traveler</span>
+        <span class="tag tag-mint">&#128187; Builder</span>
+        <span class="tag tag-gold">&#127477;&#127469; Cebuana</span>
       </div>
-      <p class="hero-bio">Filipino kid from Cebu who builds tech, travels the world, and still eats rice three times a day. Currently running 3 businesses. 🌏</p>
+      <p class="hero-bio">A Filipina from Cebu who builds tech, explores the world, helps people, and believes that God's timing is always perfect. Currently running 3 businesses. &#127758;</p>
       <div class="hero-btns">
-        <a href="https://www.facebook.com/aCueRaCa68" target="_blank" class="btn btn-fb">📘 Facebook</a>
-        <a href="https://www.instagram.com/reafilj/" target="_blank" class="btn btn-ig">📸 Instagram</a>
-        <a href="#ventures" class="btn btn-ghost">See What I Built ↓</a>
+        <a href="https://www.facebook.com/aCueRaCa68" target="_blank" class="btn btn-rose">&#128218; Facebook</a>
+        <a href="https://www.instagram.com/reafilj/" target="_blank" class="btn btn-outline">&#128248; Instagram</a>
+        <a href="#story" class="btn btn-outline">My Story &#8595;</a>
       </div>
+      <p class="hero-loc">&#128205; Based in Cebu, Philippines</p>
     </div>
   </div>
 </section>
@@ -410,49 +372,51 @@ for (let i = 0; i < 15; i++) {
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
-    <div class="section-emoji">🤙</div>
-    <h2 class="section-title">Who's This Guy?</h2>
-    <p class="section-desc">The short version: I'm Rea. I build things, help people, travel far, and never say no to adventure.</p>
+    <div class="section-icon">&#128156;</div>
+    <h2 class="section-title">Who Am I?</h2>
+    <p class="section-desc">The short version: I'm Rea. I build things, help people, travel far, and stay grateful for everything.</p>
 
-    <div class="about-cards">
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">🤝</div>
-        <div class="about-card-title">Someone Who Helps</div>
-        <p class="about-card-text">During the Axie Infinity era, I ran the RBR Guild — giving scholarships to Filipinos who needed income during the pandemic. I managed scholars, shared earnings, and helped people put food on the table through gaming.</p>
+    <div class="about-grid">
+      <div class="acard fade-in">
+        <div class="acard-icon">&#129309;</div>
+        <div class="acard-title">Someone Who Helps</div>
+        <p class="acard-text">During the Axie Infinity era, I ran the RBR Guild — giving scholarships to Filipinos who needed income during the pandemic. I managed scholars, shared earnings, and helped families put food on the table.</p>
       </div>
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">👨‍👩‍👧‍👦</div>
-        <div class="about-card-title">Family-Centered</div>
-        <p class="about-card-text">Everything I do is for family. I'm not chasing fame — I'm building a future for the people I love. My work ethic comes from watching my family work hard every day.</p>
+      <div class="acard fade-in">
+        <div class="acard-icon">&#128106;</div>
+        <div class="acard-title">Family-Centered</div>
+        <p class="acard-text">Everything I do is for family. I'm not chasing fame — I'm building a future for the people I love. My work ethic comes from watching my family work hard every day.</p>
       </div>
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">🙏</div>
-        <div class="about-card-title">Faith-Driven</div>
-        <p class="about-card-text">I believe in God's timing. Every opportunity, every country I've visited, every business I've built — none of it would be possible without faith and gratitude.</p>
+      <div class="acard fade-in">
+        <div class="acard-icon">&#128591;</div>
+        <div class="acard-title">Faith-Driven</div>
+        <p class="acard-text">I believe in God's timing. Every opportunity, every country I've visited, every business I've built — none of it would be possible without faith and gratitude.</p>
       </div>
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">🌍</div>
-        <div class="about-card-title">World Explorer</div>
-        <p class="about-card-text">Been to many places around the world — every trip teaches me something I bring back home to Cebu.</p>
+      <div class="acard fade-in">
+        <div class="acard-icon">&#127758;</div>
+        <div class="acard-title">World Explorer</div>
+        <p class="acard-text">Been to many places around the world — every trip teaches me something I bring back home to Cebu.</p>
       </div>
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">🧑‍💻</div>
-        <div class="about-card-title">Self-Taught Builder</div>
-        <p class="about-card-text">No CS degree. No bootcamp. Just curiosity, YouTube, and a lot of late nights. I taught myself to code and launched 3 businesses in 2026 — all from scratch.</p>
+      <div class="acard fade-in">
+        <div class="acard-icon">&#128105;&#8205;&#128187;</div>
+        <div class="acard-title">Self-Taught Builder</div>
+        <p class="acard-text">No CS degree. No bootcamp. Just curiosity, determination, and a lot of late nights. I taught myself to code and launched 3 businesses in 2026 — all from scratch.</p>
       </div>
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">🇵🇭</div>
-        <div class="about-card-title">Proud Bisaya</div>
-        <p class="about-card-text">Born and raised in Cebu. Everything I build is rooted in Bisaya culture. BAHAW Studio celebrates our identity. Townik serves our community. This is home — always.</p>
+      <div class="acard fade-in">
+        <div class="acard-icon">&#127477;&#127469;</div>
+        <div class="acard-title">Proud Cebuana</div>
+        <p class="acard-text">Born and raised in Cebu. Everything I build is rooted in Bisaya culture. BAHAW Studio celebrates our identity. Townik serves our community. This is home — always.</p>
       </div>
     </div>
   </div>
 </section>
 
+<div class="section-divider">&#10045; &#10045; &#10045;</div>
+
 <!-- MY STORY -->
 <section id="story">
   <div class="container">
-    <div class="section-emoji">📖</div>
+    <div class="section-icon">&#128214;</div>
     <h2 class="section-title">My Story</h2>
     <p class="section-desc">Not a highlight reel — the real journey of how I got here.</p>
 
@@ -461,195 +425,187 @@ for (let i = 0; i < 15; i++) {
         <div class="tl-year">The Early Days</div>
         <div class="tl-title">Growing Up in Cebu</div>
         <p class="tl-desc">Born and raised in Cebu, Philippines. Grew up curious, always asking "how does this work?" Learned early that if you want something, you build it yourself.</p>
-        <span class="tl-tag tl-tag-yellow">🇵🇭 Cebu</span>
+        <span class="tl-tag tl-tag-gold">&#127477;&#127469; Cebu</span>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">The Grind</div>
-        <div class="tl-title">Working & Saving</div>
+        <div class="tl-title">Working &amp; Saving</div>
         <p class="tl-desc">Worked hard, saved up, and never stopped learning. Every job taught me something — discipline, patience, how to deal with people. The corporate world gave me skills, but my heart was always in building my own thing.</p>
-        <span class="tl-tag tl-tag-purple">💼 Corporate Life</span>
+        <span class="tl-tag tl-tag-purple">&#128188; Corporate Life</span>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">2021 — The Crypto Era</div>
         <div class="tl-title">RBR Guild — Helping Filipinos Earn</div>
         <p class="tl-desc">When Axie Infinity exploded in the Philippines, I didn't just play — I built a guild. RBR gave scholarships to people who couldn't afford to start. I managed scholars, split earnings fairly, and helped families earn real income during the pandemic. It wasn't about getting rich — it was about helping people who needed it.</p>
-        <span class="tl-tag tl-tag-green">🎮 Axie Guild Manager</span>
-        <span class="tl-tag tl-tag-green">🤝 Gave Scholarships</span>
+        <span class="tl-tag tl-tag-green">&#127918; Axie Guild Manager</span>
+        <span class="tl-tag tl-tag-green">&#129309; Gave Scholarships</span>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">2021-2025 — The World</div>
         <div class="tl-title">Seeing the World</div>
         <p class="tl-desc">Traveled to many countries across Asia, South America, and beyond. Each place changed how I see the world — how communities work, how trust is built, and how technology connects people everywhere.</p>
-        <span class="tl-tag tl-tag-cyan">✈️ World Traveler</span>
+        <span class="tl-tag tl-tag-cyan">&#9992;&#65039; World Traveler</span>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">February 2026</div>
-        <div class="tl-title">CebuLandMarket — Making Property Fair</div>
-        <p class="tl-desc">Saw how sketchy buying land in Cebu can be — fake titles, shady brokers, zero transparency. So I built CebuLandMarket: verified listings, document checks, real due diligence. DTI-registered. Because Filipinos deserve honest property deals.</p>
-        <span class="tl-tag tl-tag-purple">🏡 DTI Registered</span>
+        <div class="tl-title">CebuLandMarket</div>
+        <p class="tl-desc">Saw how sketchy buying land in Cebu can be — fake titles, shady brokers, zero transparency. So I built CebuLandMarket: verified listings, document checks, real due diligence. DTI-registered.</p>
+        <span class="tl-tag tl-tag-purple">&#127969; DTI Registered</span>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">March 2026</div>
-        <div class="tl-title">Townik — Your Town's Network</div>
-        <p class="tl-desc">Built Townik because finding trusted help in Cebu was broken. People posting on Facebook groups, praying someone legit responds. Townik has 36+ service categories, ID-verified workers, instant booking. One app to find help you can actually trust.</p>
-        <span class="tl-tag tl-tag-cyan">🌐 36+ Services</span>
-        <span class="tl-tag tl-tag-cyan">✅ ID Verified</span>
+        <div class="tl-title">Townik</div>
+        <p class="tl-desc">Built Townik because finding trusted help in Cebu was broken. People posting on Facebook groups, praying someone legit responds. Townik has 36+ services, ID-verified workers, instant booking.</p>
+        <span class="tl-tag tl-tag-cyan">&#127760; 36+ Services</span>
+        <span class="tl-tag tl-tag-cyan">&#9989; ID Verified</span>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">2026</div>
-        <div class="tl-title">BAHAW Studio — Celebrating Bisaya Culture</div>
-        <p class="tl-desc">Launched a Cebuano-themed lifestyle brand. Caps, tees, and accessories that celebrate what it means to be Bisaya. Because our culture deserves to be worn with pride — not just spoken.</p>
-        <span class="tl-tag tl-tag-pink">🎨 Bisaya Brand</span>
+        <div class="tl-title">BAHAW Studio</div>
+        <p class="tl-desc">Launched a Cebuano-themed lifestyle brand. Caps, tees, and accessories that celebrate what it means to be Bisaya. Because our culture deserves to be worn with pride.</p>
+        <span class="tl-tag tl-tag-pink">&#127912; Bisaya Brand</span>
       </div>
 
       <div class="tl-item">
-        <div class="tl-year">Now & Beyond</div>
-        <div class="tl-title">Still Building. Still Traveling. Still Helping.</div>
-        <p class="tl-desc">The journey isn't over — it's just getting started. More countries to explore, more problems to solve, more people to help. If you're reading this, maybe our paths are about to cross. 🤙</p>
-        <span class="tl-tag tl-tag-yellow">🚀 What's Next?</span>
+        <div class="tl-year">Now &amp; Beyond</div>
+        <div class="tl-title">Still Building. Still Exploring. Still Helping.</div>
+        <p class="tl-desc">The journey isn't over — it's just getting started. More places to explore, more problems to solve, more people to help. &#128156;</p>
+        <span class="tl-tag tl-tag-gold">&#128640; What's Next?</span>
       </div>
     </div>
   </div>
 </section>
 
+<div class="section-divider">&#10045; &#10045; &#10045;</div>
+
 <!-- TRAVELS -->
 <section id="travels">
-  <div class="container">
-    <div class="section-emoji">✈️</div>
-    <h2 class="section-title">Where I've Been</h2>
-    <p class="section-desc">I believe the best ideas come from seeing how other people live. Here's my map so far.</p>
-
-    <p class="about-card-text fade-in" style="text-align:center; max-width: 600px; margin: 30px auto 0; font-size: 17px; line-height: 1.8; color: var(--dim);">I've been blessed to explore many countries around the world. Every culture, every street, every conversation shaped how I think and build. Travel isn't a luxury — it's an education.</p>
-
-    <p class="travel-note fade-in">Follow my adventures on <a href="https://www.facebook.com/aCueRaCa68" target="_blank">Facebook</a> and <a href="https://www.instagram.com/reafilj/" target="_blank">Instagram</a> 📸</p>
+  <div class="container" style="text-align:center;">
+    <div class="section-icon">&#9992;&#65039;</div>
+    <h2 class="section-title">Travels</h2>
+    <p class="section-desc" style="margin: 0 auto;">I believe the best ideas come from seeing how other people live.</p>
+    <p class="travel-text fade-in">I've been blessed to explore many countries around the world. Every culture, every street, every conversation shaped how I think and build. Travel isn't a luxury — it's an education.</p>
+    <p class="travel-follow fade-in">Follow my adventures on <a href="https://www.facebook.com/aCueRaCa68" target="_blank">Facebook</a> and <a href="https://www.instagram.com/reafilj/" target="_blank">Instagram</a> &#128248;</p>
   </div>
 </section>
+
+<div class="section-divider">&#10045; &#10045; &#10045;</div>
 
 <!-- VENTURES -->
 <section id="ventures">
   <div class="container">
-    <div class="section-emoji">🚀</div>
+    <div class="section-icon">&#128640;</div>
     <h2 class="section-title">What I Built</h2>
-    <p class="section-desc">Three businesses, one year, zero excuses. Each one solves a real problem.</p>
+    <p class="section-desc">Three businesses, one year, zero excuses.</p>
 
     <div class="ventures-stack">
       <a href="https://townik.com" target="_blank" class="venture fade-in">
-        <div class="venture-icon">🌐</div>
+        <div class="venture-icon">&#127760;</div>
         <div class="venture-info">
           <div class="venture-name">Townik</div>
-          <div class="venture-role">Founder & Developer</div>
-          <p class="venture-desc">Your town's network. Find ID-verified workers across 36+ services in Cebu — plumbing, cleaning, tutoring, you name it. Book in seconds, not hours.</p>
+          <div class="venture-role">Founder &amp; Developer</div>
+          <p class="venture-desc">Your town's network. Find ID-verified workers across 36+ services in Cebu. Book in seconds, not hours.</p>
         </div>
-        <div class="venture-arrow">→</div>
+        <div class="venture-arrow">&rarr;</div>
       </a>
-
       <a href="https://cebulandmarket.com" target="_blank" class="venture fade-in">
-        <div class="venture-icon">🏡</div>
+        <div class="venture-icon">&#127969;</div>
         <div class="venture-info">
           <div class="venture-name">CebuLandMarket</div>
-          <div class="venture-role">Founder & Developer</div>
-          <p class="venture-desc">DTI-registered property platform for Cebu. Verified listings, document checks, real due diligence. No shady deals.</p>
+          <div class="venture-role">Founder &amp; Developer</div>
+          <p class="venture-desc">DTI-registered property platform for Cebu. Verified listings, document checks, real due diligence.</p>
         </div>
-        <div class="venture-arrow">→</div>
+        <div class="venture-arrow">&rarr;</div>
       </a>
-
       <a href="https://bahaw-studio.github.io" target="_blank" class="venture fade-in">
-        <div class="venture-icon">🎨</div>
+        <div class="venture-icon">&#127912;</div>
         <div class="venture-info">
           <div class="venture-name">BAHAW Studio</div>
-          <div class="venture-role">Founder & Creative Director</div>
-          <p class="venture-desc">Cebuano-themed lifestyle brand. Caps, tees, and accessories that celebrate Bisaya culture. Available on Etsy.</p>
+          <div class="venture-role">Founder &amp; Creative Director</div>
+          <p class="venture-desc">Cebuano-themed lifestyle brand. Caps, tees, and accessories that celebrate Bisaya culture.</p>
         </div>
-        <div class="venture-arrow">→</div>
+        <div class="venture-arrow">&rarr;</div>
       </a>
     </div>
   </div>
 </section>
 
+<div class="section-divider">&#10045; &#10045; &#10045;</div>
+
 <!-- FUN FACTS -->
 <section id="fun">
   <div class="container">
-    <div class="section-emoji">🎲</div>
-    <h2 class="section-title">Things People Don't Know About Me</h2>
+    <div class="section-icon">&#127800;</div>
+    <h2 class="section-title">Things You Might Not Know</h2>
     <p class="section-desc">The stuff that doesn't fit on a resume.</p>
 
     <div class="facts-grid">
       <div class="fact fade-in">
-        <div class="fact-emoji">🎮</div>
-        <p class="fact-text">Ran an Axie guild & gave scholarships to help families earn</p>
+        <div class="fact-icon">&#127918;</div>
+        <p class="fact-text">Ran an Axie guild &amp; gave scholarships to help families earn</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">🙏</div>
+        <div class="fact-icon">&#128591;</div>
         <p class="fact-text">Grateful for everything — faith keeps me grounded</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">✈️</div>
+        <div class="fact-icon">&#9992;&#65039;</div>
         <p class="fact-text">Been around the world — and the list keeps growing</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">👨‍👩‍👧‍👦</div>
+        <div class="fact-icon">&#128106;</div>
         <p class="fact-text">Family is the reason behind every late night</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">🍚</div>
+        <div class="fact-icon">&#127834;</div>
         <p class="fact-text">Rice 3x a day — non-negotiable</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">🏗️</div>
+        <div class="fact-icon">&#127959;&#65039;</div>
         <p class="fact-text">3 businesses built in 2026 — all self-taught</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">🌙</div>
+        <div class="fact-icon">&#127769;</div>
         <p class="fact-text">Best ideas happen at 2AM</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">🤝</div>
+        <div class="fact-icon">&#129309;</div>
         <p class="fact-text">Will always help someone who needs it</p>
       </div>
     </div>
   </div>
 </section>
 
+<div class="section-divider">&#10045; &#10045; &#10045;</div>
+
 <!-- CONTACT -->
 <section id="contact">
-  <div class="container">
-    <div class="section-emoji">💬</div>
+  <div class="container" style="text-align:center;">
+    <div class="section-icon">&#128140;</div>
     <h2 class="section-title">Let's Connect!</h2>
-    <p class="section-desc">Got an idea? Want to collab? Or just want to say hi? Hit me up anywhere.</p>
+    <p class="section-desc" style="margin: 0 auto;">Got an idea? Want to collab? Or just want to say hi? I'd love to hear from you.</p>
 
     <div class="contact-row">
-      <a href="https://www.facebook.com/aCueRaCa68" target="_blank" class="contact-btn fade-in">
-        <span class="icon">📘</span> Facebook
-      </a>
-      <a href="https://www.instagram.com/reafilj/" target="_blank" class="contact-btn fade-in">
-        <span class="icon">📸</span> Instagram
-      </a>
-      <a href="mailto:r.reafil2@gmail.com" class="contact-btn fade-in">
-        <span class="icon">✉️</span> Email
-      </a>
-      <a href="https://townik.com" target="_blank" class="contact-btn fade-in">
-        <span class="icon">🌐</span> Townik
-      </a>
-      <a href="https://cebulandmarket.com" target="_blank" class="contact-btn fade-in">
-        <span class="icon">🏡</span> CebuLandMarket
-      </a>
-      <a href="https://bahaw-studio.github.io" target="_blank" class="contact-btn fade-in">
-        <span class="icon">🎨</span> BAHAW Studio
-      </a>
+      <a href="https://www.facebook.com/aCueRaCa68" target="_blank" class="contact-btn fade-in"><span class="icon">&#128218;</span> Facebook</a>
+      <a href="https://www.instagram.com/reafilj/" target="_blank" class="contact-btn fade-in"><span class="icon">&#128248;</span> Instagram</a>
+      <a href="mailto:r.reafil2@gmail.com" class="contact-btn fade-in"><span class="icon">&#9993;&#65039;</span> Email</a>
+      <a href="https://townik.com" target="_blank" class="contact-btn fade-in"><span class="icon">&#127760;</span> Townik</a>
+      <a href="https://cebulandmarket.com" target="_blank" class="contact-btn fade-in"><span class="icon">&#127969;</span> CebuLandMarket</a>
+      <a href="https://bahaw-studio.github.io" target="_blank" class="contact-btn fade-in"><span class="icon">&#127912;</span> BAHAW Studio</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p class="footer-quote">"Build things that matter. Travel far. Stay humble." — Rea</p>
-  <p>&copy; 2026 Reafil Rusiana &bull; Made with ☕ in Cebu, Philippines</p>
+  <p class="footer-quote">"Build things that matter. Travel far. Stay grateful." — Rea</p>
+  <p>&copy; 2026 Reafil Rusiana &bull; Made with &#10084;&#65039; in Cebu, Philippines</p>
   <p style="margin-top: 8px;">
     <a href="https://townik.com">Townik</a> &bull;
     <a href="https://cebulandmarket.com">CebuLandMarket</a> &bull;
