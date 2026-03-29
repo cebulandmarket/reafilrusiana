@@ -264,6 +264,36 @@ section { padding: 80px 0; }
 .venture-arrow { font-size: 24px; color: var(--dim); transition: transform 0.3s, color 0.3s; }
 .venture:hover .venture-arrow { transform: translateX(6px); color: var(--cyan); }
 
+/* ═══ MY STORY TIMELINE ═══ */
+.timeline { margin-top: 40px; position: relative; padding-left: 40px; }
+.timeline::before {
+  content: ''; position: absolute; left: 14px; top: 0; bottom: 0; width: 3px;
+  background: linear-gradient(180deg, var(--purple), var(--cyan), var(--pink), var(--green));
+  border-radius: 2px;
+}
+.tl-item { position: relative; margin-bottom: 28px; }
+.tl-item::before {
+  content: ''; position: absolute; left: -33px; top: 6px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--purple); border: 3px solid var(--bg);
+  box-shadow: 0 0 12px rgba(167,139,250,0.4);
+}
+.tl-year {
+  font-family: 'Outfit'; font-size: 14px; font-weight: 800; color: var(--cyan);
+  letter-spacing: 2px; text-transform: uppercase;
+}
+.tl-title { font-size: 18px; font-weight: 800; margin-top: 4px; }
+.tl-desc { font-size: 15px; color: var(--dim); line-height: 1.6; margin-top: 4px; }
+.tl-tag {
+  display: inline-block; padding: 3px 12px; border-radius: 50px; font-size: 12px; font-weight: 700;
+  margin-top: 6px; border: 1px solid;
+}
+.tl-tag-green { color: var(--green); border-color: rgba(74,222,128,0.3); background: rgba(74,222,128,0.08); }
+.tl-tag-purple { color: var(--purple); border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.08); }
+.tl-tag-pink { color: var(--pink); border-color: rgba(244,114,182,0.3); background: rgba(244,114,182,0.08); }
+.tl-tag-yellow { color: var(--yellow); border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.08); }
+.tl-tag-cyan { color: var(--cyan); border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.08); }
+
 /* ═══ FUN FACTS ═══ */
 .facts-grid {
   margin-top: 40px;
@@ -343,9 +373,9 @@ for (let i = 0; i < 15; i++) {
     <a href="#" class="nav-name">Reafil ✌️</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#story">My Story</a></li>
       <li><a href="#travels">Travels</a></li>
       <li><a href="#ventures">Ventures</a></li>
-      <li><a href="#fun">Fun Facts</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-social">
@@ -385,28 +415,107 @@ for (let i = 0; i < 15; i++) {
   <div class="container">
     <div class="section-emoji">🤙</div>
     <h2 class="section-title">Who's This Guy?</h2>
-    <p class="section-desc">The short version: I'm Rea. I build things, travel far, and never say no to adventure.</p>
+    <p class="section-desc">The short version: I'm Rea. I build things, help people, travel far, and never say no to adventure.</p>
 
     <div class="about-cards">
       <div class="about-card fade-in">
-        <div class="about-card-emoji">🧑‍💻</div>
-        <div class="about-card-title">Self-Taught Builder</div>
-        <p class="about-card-text">No CS degree. No bootcamp. Just curiosity, YouTube, and a lot of late nights. I taught myself to code and launched 3 businesses in 2026.</p>
+        <div class="about-card-emoji">🤝</div>
+        <div class="about-card-title">Someone Who Helps</div>
+        <p class="about-card-text">During the Axie Infinity era, I ran the RBR Guild — giving scholarships to Filipinos who needed income during the pandemic. I managed scholars, shared earnings, and helped people put food on the table through gaming.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-card-emoji">👨‍👩‍👧‍👦</div>
+        <div class="about-card-title">Family-Centered</div>
+        <p class="about-card-text">Everything I do is for family. I'm not chasing fame — I'm building a future for the people I love. My work ethic comes from watching my family work hard every day.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-card-emoji">🙏</div>
+        <div class="about-card-title">Faith-Driven</div>
+        <p class="about-card-text">I believe in God's timing. Every opportunity, every country I've visited, every business I've built — none of it would be possible without faith and gratitude.</p>
       </div>
       <div class="about-card fade-in">
         <div class="about-card-emoji">🌍</div>
         <div class="about-card-title">World Explorer</div>
-        <p class="about-card-text">13+ countries and counting. From the neon streets of Tokyo to the mountains of Colombia — every trip teaches me something I bring back home.</p>
+        <p class="about-card-text">13+ countries and counting. From the neon streets of Tokyo to the mountains of Colombia — every trip teaches me something I bring back home to Cebu.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-card-emoji">🧑‍💻</div>
+        <div class="about-card-title">Self-Taught Builder</div>
+        <p class="about-card-text">No CS degree. No bootcamp. Just curiosity, YouTube, and a lot of late nights. I taught myself to code and launched 3 businesses in 2026 — all from scratch.</p>
       </div>
       <div class="about-card fade-in">
         <div class="about-card-emoji">🇵🇭</div>
         <div class="about-card-title">Proud Bisaya</div>
-        <p class="about-card-text">Born and raised in Cebu. Everything I build is rooted in Bisaya culture and made to serve Filipino communities. Cebu is home — always.</p>
+        <p class="about-card-text">Born and raised in Cebu. Everything I build is rooted in Bisaya culture. BAHAW Studio celebrates our identity. Townik serves our community. This is home — always.</p>
       </div>
-      <div class="about-card fade-in">
-        <div class="about-card-emoji">💡</div>
-        <div class="about-card-title">Problem Solver</div>
-        <p class="about-card-text">I don't build apps for fun — I build them because someone needed it. Townik exists because finding trusted help was broken. CebuLandMarket exists because buying land was sketchy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MY STORY -->
+<section id="story">
+  <div class="container">
+    <div class="section-emoji">📖</div>
+    <h2 class="section-title">My Story</h2>
+    <p class="section-desc">Not a highlight reel — the real journey of how I got here.</p>
+
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-year">The Early Days</div>
+        <div class="tl-title">Growing Up in Cebu</div>
+        <p class="tl-desc">Born and raised in Cebu, Philippines. Grew up curious, always asking "how does this work?" Learned early that if you want something, you build it yourself.</p>
+        <span class="tl-tag tl-tag-yellow">🇵🇭 Cebu</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">The Grind</div>
+        <div class="tl-title">Working & Saving</div>
+        <p class="tl-desc">Worked hard, saved up, and never stopped learning. Every job taught me something — discipline, patience, how to deal with people. The corporate world gave me skills, but my heart was always in building my own thing.</p>
+        <span class="tl-tag tl-tag-purple">💼 Corporate Life</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2021 — The Crypto Era</div>
+        <div class="tl-title">RBR Guild — Helping Filipinos Earn</div>
+        <p class="tl-desc">When Axie Infinity exploded in the Philippines, I didn't just play — I built a guild. RBR gave scholarships to people who couldn't afford to start. I managed scholars, split earnings fairly, and helped families earn real income during the pandemic. It wasn't about getting rich — it was about helping people who needed it.</p>
+        <span class="tl-tag tl-tag-green">🎮 Axie Guild Manager</span>
+        <span class="tl-tag tl-tag-green">🤝 Gave Scholarships</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2021-2025 — The World</div>
+        <div class="tl-title">Traveling to 13+ Countries</div>
+        <p class="tl-desc">Japan, Hong Kong, Colombia, South Korea, Thailand, Singapore, Taiwan, Vietnam, Malaysia, Indonesia, India, Australia, USA — each country changed how I see the world. I saw how communities work differently, how trust is built, and how technology connects people everywhere.</p>
+        <span class="tl-tag tl-tag-cyan">✈️ 13+ Countries</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">February 2026</div>
+        <div class="tl-title">CebuLandMarket — Making Property Fair</div>
+        <p class="tl-desc">Saw how sketchy buying land in Cebu can be — fake titles, shady brokers, zero transparency. So I built CebuLandMarket: verified listings, document checks, real due diligence. DTI-registered. Because Filipinos deserve honest property deals.</p>
+        <span class="tl-tag tl-tag-purple">🏡 DTI Registered</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">March 2026</div>
+        <div class="tl-title">Townik — Your Town's Network</div>
+        <p class="tl-desc">Built Townik because finding trusted help in Cebu was broken. People posting on Facebook groups, praying someone legit responds. Townik has 36+ service categories, ID-verified workers, instant booking. One app to find help you can actually trust.</p>
+        <span class="tl-tag tl-tag-cyan">🌐 36+ Services</span>
+        <span class="tl-tag tl-tag-cyan">✅ ID Verified</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2026</div>
+        <div class="tl-title">BAHAW Studio — Celebrating Bisaya Culture</div>
+        <p class="tl-desc">Launched a Cebuano-themed lifestyle brand. Caps, tees, and accessories that celebrate what it means to be Bisaya. Because our culture deserves to be worn with pride — not just spoken.</p>
+        <span class="tl-tag tl-tag-pink">🎨 Bisaya Brand</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">Now & Beyond</div>
+        <div class="tl-title">Still Building. Still Traveling. Still Helping.</div>
+        <p class="tl-desc">The journey isn't over — it's just getting started. More countries to explore, more problems to solve, more people to help. If you're reading this, maybe our paths are about to cross. 🤙</p>
+        <span class="tl-tag tl-tag-yellow">🚀 What's Next?</span>
       </div>
     </div>
   </div>
@@ -490,33 +599,41 @@ for (let i = 0; i < 15; i++) {
 <section id="fun">
   <div class="container">
     <div class="section-emoji">🎲</div>
-    <h2 class="section-title">Fun Facts About Me</h2>
-    <p class="section-desc">Because life isn't just about work.</p>
+    <h2 class="section-title">Things People Don't Know About Me</h2>
+    <p class="section-desc">The stuff that doesn't fit on a resume.</p>
 
     <div class="facts-grid">
       <div class="fact fade-in">
-        <div class="fact-emoji">🍚</div>
-        <p class="fact-text">Rice 3x a day, non-negotiable</p>
+        <div class="fact-emoji">🎮</div>
+        <p class="fact-text">Ran an Axie guild & gave scholarships to help families earn</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">🌙</div>
-        <p class="fact-text">Best code happens after midnight</p>
+        <div class="fact-emoji">🙏</div>
+        <p class="fact-text">Grateful for everything — faith keeps me grounded</p>
       </div>
       <div class="fact fade-in">
         <div class="fact-emoji">✈️</div>
-        <p class="fact-text">13+ countries before 30</p>
+        <p class="fact-text">13+ countries explored — and the list keeps growing</p>
       </div>
       <div class="fact fade-in">
-        <div class="fact-emoji">📚</div>
-        <p class="fact-text">Self-taught everything</p>
+        <div class="fact-emoji">👨‍👩‍👧‍👦</div>
+        <p class="fact-text">Family is the reason behind every late night</p>
+      </div>
+      <div class="fact fade-in">
+        <div class="fact-emoji">🍚</div>
+        <p class="fact-text">Rice 3x a day — non-negotiable</p>
       </div>
       <div class="fact fade-in">
         <div class="fact-emoji">🏗️</div>
-        <p class="fact-text">3 businesses in 1 year</p>
+        <p class="fact-text">3 businesses built in 2026 — all self-taught</p>
+      </div>
+      <div class="fact fade-in">
+        <div class="fact-emoji">🌙</div>
+        <p class="fact-text">Best ideas happen at 2AM</p>
       </div>
       <div class="fact fade-in">
         <div class="fact-emoji">🤝</div>
-        <p class="fact-text">Bisaya first, always</p>
+        <p class="fact-text">Will always help someone who needs it</p>
       </div>
     </div>
   </div>
